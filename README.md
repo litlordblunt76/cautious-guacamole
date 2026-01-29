@@ -21,7 +21,7 @@ A beautiful, responsive daily tracker web application that displays a new Bible 
 
 The application uses the day of the year to determine which verse and quote to display. This ensures that:
 - The same verse and quote appear on the same day each year
-- Content automatically changes at midnight
+- Content automatically changes when the day changes (checked every minute)
 - No server or database is required
 
 ## Usage
@@ -50,10 +50,12 @@ You can easily customize the content by editing `data.js`:
 
 ## Browser Compatibility
 
-Works on all modern browsers:
-- Chrome
-- Firefox
-- Safari
-- Edge
+Works on modern browsers (minimum versions):
+- Chrome 105+ (September 2022)
+- Firefox 121+ (December 2023)
+- Safari 15.4+ (March 2022)
+- Edge 105+ (September 2022)
+
+The application uses the `:has()` CSS selector for checkbox styling, which requires these minimum versions.
 
 No installation or dependencies required - just open and use!

@@ -97,7 +97,7 @@ setInterval(() => {
     const currentDate = new Date().toDateString();
     const storedDate = localStorage.getItem('lastCheckDate');
     
-    if (storedDate !== currentDate) {
+    if (storedDate && storedDate !== currentDate) {
         localStorage.setItem('lastCheckDate', currentDate);
         location.reload();
     }
