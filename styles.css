@@ -63,9 +63,7 @@ main {
     margin-bottom: 20px;
 }
 
-.bible-verse .card-header h2 {
-    color: #667eea;
-}
+
 
 .motivational-quote .card-header h2 {
     color: #764ba2;
@@ -135,7 +133,7 @@ main {
     color: #333;
 }
 
-.tracker-item input[type="checkbox"]:checked + span {
+.tracker-item label:has(input[type="checkbox"]:checked) span {
     text-decoration: line-through;
     color: #999;
 }

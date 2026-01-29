@@ -3,7 +3,7 @@
 // Function to get index based on current date
 function getDailyIndex(arrayLength) {
     const today = new Date();
-    const startOfYear = new Date(today.getFullYear(), 0, 0);
+    const startOfYear = new Date(today.getFullYear(), 0, 1);
     const diff = today - startOfYear;
     const oneDay = 1000 * 60 * 60 * 24;
     const dayOfYear = Math.floor(diff / oneDay);
@@ -86,6 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
     loadDailyContent();
     loadTrackerState();
     initializeTracker();
+    
+    // Initialize the last check date
+    const currentDate = new Date().toDateString();
+    localStorage.setItem('lastCheckDate', currentDate);
 });
 
 // Check for day change and reload content
