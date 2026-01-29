@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tracker - Bible Verses & Motivational Quotes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Inspiration Tracker</h1>
+            <p class="date" id="currentDate"></p>
+        </header>
+
+        <main>
+            <section class="card bible-verse">
+                <div class="card-header">
+                    <h2>📖 Daily Bible Verse</h2>
+                </div>
+                <div class="card-content">
+                    <p class="verse-text" id="verseText">Loading...</p>
+                    <p class="verse-reference" id="verseReference"></p>
+                </div>
+            </section>
+
+            <section class="card motivational-quote">
+                <div class="card-header">
+                    <h2>💪 Motivational Quote</h2>
+                </div>
+                <div class="card-content">
+                    <p class="quote-text" id="quoteText">Loading...</p>
+                    <p class="quote-author" id="quoteAuthor"></p>
+                </div>
+            </section>
+
+            <section class="tracker-section">
+                <h2>Daily Tracker</h2>
+                <div class="tracker-grid">
+                    <div class="tracker-item">
+                        <label>
+                            <input type="checkbox" id="morning-prayer">
+                            <span>Morning Prayer</span>
+                        </label>
+                    </div>
+                    <div class="tracker-item">
+                        <label>
+                            <input type="checkbox" id="bible-reading">
+                            <span>Bible Reading</span>
+                        </label>
+                    </div>
+                    <div class="tracker-item">
+                        <label>
+                            <input type="checkbox" id="meditation">
+                            <span>Meditation/Reflection</span>
+                        </label>
+                    </div>
+                    <div class="tracker-item">
+                        <label>
+                            <input type="checkbox" id="gratitude">
+                            <span>Gratitude Journal</span>
+                        </label>
+                    </div>
+                    <div class="tracker-item">
+                        <label>
+                            <input type="checkbox" id="exercise">
+                            <span>Exercise</span>
+                        </label>
+                    </div>
+                    <div class="tracker-item">
+                        <label>
+                            <input type="checkbox" id="evening-prayer">
+                            <span>Evening Prayer</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Content updates automatically when the day changes</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
